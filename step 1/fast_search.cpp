@@ -17,7 +17,10 @@ ll closestToLeft ( ll arr[], ll N, ll K ) {  // will search for element <=K [fro
     while ( right > left + 1 ) { 
         ll mid = ( left + right ) / 2; 
         if ( arr[mid] > K ) right = mid; 
-        else left = mid; 
+        else left = mid;  
+     // think it as when arr[mid] <= K means our left will be true till the no.s is there 
+     // for ex. 1 5 5 5 5 10 
+     // this will get to immediate left element as arr[mid] <= k 
     }
 
     return left + 1; 
@@ -31,6 +34,7 @@ ll closestToRight ( ll arr[], ll N, ll K ) {  // will search for element >=K [fr
         ll mid = ( left + right ) / 2; 
         if ( arr[mid] < K ) left = mid; 
         else right = mid; 
+     // think it as when arr[mid] >= K means it will go to till the right won't stop as = condtion also there 
     }
     return right + 1;
 }
