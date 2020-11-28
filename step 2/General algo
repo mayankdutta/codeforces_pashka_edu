@@ -1,0 +1,7 @@
+problems of step-2 mainly innvolve 2 subproblems 
+
+1. binary search 
+2. function "good" 
+
+1. O ( log N ) for doing the binary search 
+2. in step-2 function "good" must be in O ( 1 ) 
